@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "44374339-299c-4d74-a6fe-5aae56717a75",
+		"name": "User Api Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45203793",
+		"_collection_link": "https://amol-2573223.postman.co/workspace/Amol's-Workspace~9915539b-ad29-4072-8a3d-3c19f2a3e3a9/collection/45203793-44374339-299c-4d74-a6fe-5aae56717a75?action=share&source=collection_link&creator=45203793"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users By id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"xaxaxaxaxa\",\r\n  \"email\": \"xaxaaxax@example.com\",\r\n  \"password\": \"xaasasasasa12345\",\r\n  \"phone\": \"7006765432\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"mmmmmm Updated\",\r\n  \"email\": \"AmolUpdatedmmmm@example.com\",\r\n  \"password\": \"UpodatedPassmmm\",\r\n  \"phone\": \"5432123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/search/amol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"search",
+						"amol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Phone Number(Filter)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/filter/phone/9898989898",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"filter",
+						"phone",
+						"9898989898"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Adding ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"ttttt\",\r\n    \"email\": \"tttt@example.com\",\r\n    \"password\": \"sssssddc123\",\r\n    \"phone\": \"8765676543\"\r\n  },\r\n  {\r\n    \"name\": \"nnnnnn\",\r\n    \"email\": \"nbnbnb@example.com\",\r\n    \"password\": \"nnn123\",\r\n    \"phone\": \"111111111111\"\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
