@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Get all users",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -27,7 +27,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get users By id",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -47,7 +47,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Add New User",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -75,7 +75,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Update User",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -104,7 +104,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Delete User",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -124,7 +124,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Search User",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -145,7 +145,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get User By Phone Number(Filter)",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -167,7 +167,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Bulk Adding ",
 			"request": {
 				"method": "POST",
 				"header": [],
